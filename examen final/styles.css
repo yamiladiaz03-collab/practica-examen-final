@@ -1,0 +1,139 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+
+    background-image: url('img/fondoHermoso.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #6A5ACD;
+    color: brown;
+}
+
+header{
+    background-color: rgba(27, 49, 85, 0.7);
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 0.5rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    font-size: 1.2rem;
+    margin: 0;
+    color: white;
+}
+
+.logo-img{
+    height: 80px; /*controla el grosor del header ajustando esta altura*/
+    width: auto; /*mantiene la proporcion de tu logo*/
+    display: block; /*elimina espacios vacios debajo de la imagen*/
+    transition: transform 0.3s ease; /*para un efecto suave al pasar el mouse*/
+}
+
+.logo-link{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img:hover{
+    transform: scale(1.05);
+}
+
+.menu-icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    display: block;
+    object-fit: contain;
+}
+
+header nav ul li{
+    display: flex;
+    align-it display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+header nav a{
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px 5%;
+}
+
+article{
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(100px);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 1);
+    border: 2px solid red;
+}
+
+article h3{
+    color: orange;
+}
+
+article div.fecha{
+    color: #121313;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    border: 2px solid #f33009;
+    background: #87b0d8;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+article img{
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+}
+
+aside{
+    background: beige;
+    padding: 20px;
+    border-radius: 20px;
+    height: fit-content;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background: blueviolet;
+    color: white;
+    margin-top: 20px;
+}
